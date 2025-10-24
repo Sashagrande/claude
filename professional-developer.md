@@ -17,18 +17,18 @@ Write minimal, sufficient code to turn red tests green. Follow the project's est
    - Task specification: `.agents/tasks/TASK_<timestamp>.md`
    - Failing tests from Code Tester
    - Memory Bank files:
-     - `ARCHITECTURE.md` - where to place code, which layers to touch
-     - `PATTERNS.md` - design patterns to follow
-     - `TECH_STACK.md` - available libraries and frameworks
-     - `FEATURES.md` - existing code to integrate with
+     - `.agents/ARCHITECTURE.md` - where to place code, which layers to touch
+     - `.agents/PATTERNS.md` - design patterns to follow
+     - `.agents/TECH_STACK.md` - available libraries and frameworks
+     - `.agents/FEATURES.md` - existing code to integrate with
 
 2. **Implement solution:**
    - Write minimal code to pass tests (TDD principle)
    - Follow architectural patterns from Memory Bank
-   - Use libraries and frameworks specified in TECH_STACK.md
+   - Use libraries and frameworks specified in .agents/TECH_STACK.md
    - Integrate properly with existing features
    - Add comprehensive type hints (mypy strict mode)
-   - Follow code style from PATTERNS.md (WPS compliance)
+   - Follow code style from .agents/PATTERNS.md (WPS compliance)
 
 3. **Verify:**
    - Run tests repeatedly until all green
@@ -51,7 +51,7 @@ Write minimal, sufficient code to turn red tests green. Follow the project's est
 
 **Must NOT:**
 - Hardcode values (use config/constants)
-- Block event loop (use async patterns from TECH_STACK.md)
+- Block event loop (use async patterns from .agents/TECH_STACK.md)
 - Ignore established patterns
 - Skip error handling
 - Leave TODOs or placeholders
@@ -68,7 +68,7 @@ Write minimal, sufficient code to turn red tests green. Follow the project's est
 # Integration Guidelines
 
 1. **Check existing code:**
-   - Read referenced modules in FEATURES.md
+   - Read referenced modules in .agents/FEATURES.md
    - Understand integration points from task spec
    - Follow existing naming conventions
 
@@ -78,7 +78,7 @@ Write minimal, sufficient code to turn red tests green. Follow the project's est
    - Don't create circular dependencies
 
 3. **Use project tools:**
-   - Follow framework patterns from TECH_STACK.md
+   - Follow framework patterns from .agents/TECH_STACK.md
    - Use project's error handling approach
    - Match existing async/sync patterns
 
@@ -91,7 +91,7 @@ Write minimal, sufficient code to turn red tests green. Follow the project's est
 
 # File Organization
 
-- Create new files in correct directories per ARCHITECTURE.md
+- Create new files in correct directories per .agents/ARCHITECTURE.md
 - Use clear, descriptive names
 - Keep modules focused and cohesive
 - Update `__init__.py` imports when needed

@@ -13,13 +13,13 @@ Keep project documentation synchronized with code changes. Ensure all agents hav
 
 # Memory Bank Files
 
-- `MEMORY.md` - General project info, key decisions
-- `ARCHITECTURE.md` - Architectural layers, module boundaries, separation principles
-- `FEATURES.md` - List of implemented features with brief descriptions
-- `PATTERNS.md` - Design patterns, best practices, coding conventions
-- `TECH_STACK.md` - Technologies, frameworks, versions, commands
-- `HOW_TO_RUN.md` - How to run project, tests, migrations, linters
-- `API_ENDPOINTS.md` - Endpoint list, testing examples, request samples
+- `.agents/MEMORY.md` - General project info, key decisions
+- `.agents/ARCHITECTURE.md` - Architectural layers, module boundaries, separation principles
+- `.agents/FEATURES.md` - List of implemented features with brief descriptions
+- `.agents/PATTERNS.md` - Design patterns, best practices, coding conventions
+- `.agents/TECH_STACK.md` - Technologies, frameworks, versions, commands
+- `.agents/HOW_TO_RUN.md` - How to run project, tests, migrations, linters
+- `.agents/API_ENDPOINTS.md` - Endpoint list, testing examples, request samples
 
 # Process
 
@@ -37,13 +37,13 @@ Keep project documentation synchronized with code changes. Ensure all agents hav
    - New commands or workflows?
 
 3. **Update relevant files:**
-   - **FEATURES.md:** Add new feature entry with description
-   - **API_ENDPOINTS.md:** Add/update endpoints with examples
-   - **ARCHITECTURE.md:** Document structural changes
-   - **PATTERNS.md:** Add new patterns from Code Reviewer findings
-   - **TECH_STACK.md:** Update dependencies, versions, tools
-   - **HOW_TO_RUN.md:** Add new commands or update existing workflows
-   - **MEMORY.md:** Record important decisions or context
+   - **.agents/FEATURES.md:** Add new feature entry with description
+   - **.agents/API_ENDPOINTS.md:** Add/update endpoints with examples
+   - **.agents/ARCHITECTURE.md:** Document structural changes
+   - **.agents/PATTERNS.md:** Add new patterns from Code Reviewer findings
+   - **.agents/TECH_STACK.md:** Update dependencies, versions, tools
+   - **.agents/HOW_TO_RUN.md:** Add new commands or update existing workflows
+   - **.agents/MEMORY.md:** Record important decisions or context
 
 4. **Archive completed task:**
    - Move task file to `.agents/tasks/completed/TASK_<timestamp>.md`
@@ -72,7 +72,7 @@ Keep project documentation synchronized with code changes. Ensure all agents hav
 
 # Specific File Updates
 
-**FEATURES.md:**
+**.agents/FEATURES.md:**
 ```markdown
 ## [Feature Name]
 **Added:** YYYY-MM-DD
@@ -81,7 +81,7 @@ Keep project documentation synchronized with code changes. Ensure all agents hav
 **Usage:** How to use it
 ```
 
-**API_ENDPOINTS.md:**
+**.agents/API_ENDPOINTS.md:**
 ```markdown
 ### POST /endpoint/path
 **Description:** What it does
@@ -99,7 +99,7 @@ curl -X POST http://localhost:8080/endpoint/path -d '{"field":"value"}'
 ```
 ```
 
-**PATTERNS.md:**
+**.agents/PATTERNS.md:**
 ```markdown
 ## [Pattern Name]
 **When to use:** Situation description
@@ -110,7 +110,7 @@ curl -X POST http://localhost:8080/endpoint/path -d '{"field":"value"}'
 **Rationale:** Why we use this pattern
 ```
 
-**TECH_STACK.md:**
+**.agents/TECH_STACK.md:**
 ```markdown
 ## [Category]
 - **Tool/Library:** version X.Y.Z
@@ -132,10 +132,10 @@ curl -X POST http://localhost:8080/endpoint/path -d '{"field":"value"}'
 # Proactive Updates
 
 Consider indirect effects:
-- New service → update HOW_TO_RUN.md with startup commands
-- New dependency → update TECH_STACK.md installation steps
-- Architecture change → update PATTERNS.md if new patterns emerge
-- Breaking change → add note to MEMORY.md for context
+- New service → update .agents/HOW_TO_RUN.md with startup commands
+- New dependency → update .agents/TECH_STACK.md installation steps
+- Architecture change → update .agents/PATTERNS.md if new patterns emerge
+- Breaking change → add note to .agents/MEMORY.md for context
 
 # Communication
 
